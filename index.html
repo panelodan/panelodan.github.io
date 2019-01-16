@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Caffeine Cartel</title>
+		<link rel="shortcut icon" href="logo.jpg" />
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="finalcss.css">
+		
+    </head>
+	
+    <body>
+		<p class="clock">Date/Time: <span id="datetime"></span></p>
+		
+		<p class="cartel">CAFFEINE CARTEL<img src="logo.jpg" width="100px" style="margin-left:60px"/></p>	
+		<div class="left tab tab-2">
+            <p class="font">ORDER :<input type="text" name="orde" id="item" placeholder="ORDER">
+            QTY :<input type="number" name="qty" id="qty" placeholder="QUANTITY">
+            AMOUNT :<input type="number" name="amount" id="amount" placeholder="PHP">
+			<button class="button1" onclick="addHtmlTableRow();">Add</button>
+			<button class="button2" onclick="removeSelectedRow();">Remove</button></p>
+        </div>
+		
+        <div class="container">
+            <div class="tab tab-2">
+                <table width="600px" id="table" class="myTable" border="1px">
+                    <tr>
+                        <th>ORDER</th>
+                        <th>QTY</th>
+                        <th>AMOUNT</th>
+						<th>TOTAL</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+		
+
+        <script src="cartel.js"></script>
+    </body>
+</html>
